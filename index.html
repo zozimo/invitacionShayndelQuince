@@ -327,13 +327,31 @@
   .modal-note { font-family:'Cormorant Garamond',serif; font-size:20px; font-style:italic; color:var(--silver-dim); margin-top:18px; line-height:1.5; }
   .modal-close { position:absolute; top:14px; right:18px; background:none; border:none; color:var(--silver-dim); font-size:20px; cursor:pointer; transition:color 0.2s; }
   .modal-close:hover { color:var(--silver-light); }
-
+	
   footer {
     position:relative; z-index:1; text-align:center; padding:40px 24px 60px;
     font-family:'Montserrat',sans-serif; font-size:11px; letter-spacing:0.2em; color:var(--silver-dim);
   }
   footer .footer-name { font-family:'Great Vibes',cursive; font-size:38px; color:var(--silver-light); display:block; margin-bottom:12px; text-shadow:0 0 20px rgba(180,210,255,0.3); }
+	/* Firma by Zozimo al final */
+	.zozimo-credit {
+	  display: block;
+	  padding:10px;
+	  margin-top: 25px;
+	  font-family: 'Montserrat', sans-serif;
+	  font-size: 11px;
+	  letter-spacing: 0.15em;
+	  color: rgba(200,212,232,0.5);
+	  text-decoration: none;
+	  text-align: left;
+	  opacity: 0.6;
+	  transition: all 0.25s ease;
+	}
 
+	.zozimo-credit:hover {
+	  color: var(--silver-light);
+	  opacity: 1;
+	}
   @keyframes fadeUp { from{opacity:0;transform:translateY(28px);}to{opacity:1;transform:translateY(0);} }
   @keyframes pulse { 0%,100%{opacity:0.6;transform:scale(1);}50%{opacity:1;transform:scale(1.03);} }
 
@@ -612,5 +630,11 @@
   },{threshold:0.12});
   document.querySelectorAll('.fade-in').forEach(el=>obs.observe(el));
 </script>
+<a 
+  href="https://wa.me/5491135109356?text=Hola%20quiero%20comprar%20una%20invitacion%20digital" 
+  target="_blank" 
+  class="zozimo-credit">
+  by Zozimo
+</a>
 </body>
 </html>
